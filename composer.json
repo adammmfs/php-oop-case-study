@@ -1,0 +1,36 @@
+{
+    "name": "xtend/oop-case-study",
+    "description": "Object Oriented Case Study",
+    "license": "BSD-3-Clause",
+    "keywords": ["oop"],
+    "homepage": "http://xtendindonesia.co.id",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xtend\\": "src/Xtend/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xtend\\Test\\": "test/Xtend"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.0.1-dev"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.8",
+        "phpunit/phpunit": "^5.5"
+    }
+}
