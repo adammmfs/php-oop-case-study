@@ -14,6 +14,6 @@ class Beat extends AbstractMotor
     return "2015";
   }
   public static function getWarna(){
-    return "merah";
+    return "hitam";
   }
 }
