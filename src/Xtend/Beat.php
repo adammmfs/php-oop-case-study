@@ -2,7 +2,7 @@
 
 namespace Xtend;
 
-class Beat extends AbstractMotor
+class Beat implements Spek
 {
   private $cc;
   private $transmisi;
