@@ -1,21 +1,17 @@
 <?php
-
 namespace Xtend;
-
 interface Spek
 {
-  abstract public function setTransmisi($transmisi);
-  abstract public function setCc($cc);
-  abstract public function setThn($thn);
+    public function setTransmisi($transmisi);
+    public function setCc($cc);
+    public function setThn($thn);
 }
-
 abstract class AbstractMotor implements Spek
 {
   
-  abstract protected function setTransmisi($transmisi);
-  abstract protected function setCc($cc);
-  abstract protected function setThn($thn);
-
+  abstract function setTransmisi($transmisi);
+  abstract function setCc($cc);
+  abstract function setThn($thn);
   
 //   public function cetak(){
 //     print $this->getTransmisi() . "\n";
@@ -23,6 +19,8 @@ abstract class AbstractMotor implements Spek
 //     print $this->getThn() . "\n";
 //     print $this->getWarna() . "\n";
 //   }
+
 }
 
-
+// $a = new AbstractMotor();
+// echo $a->setCC('125');
