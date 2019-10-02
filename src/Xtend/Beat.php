@@ -12,18 +12,24 @@ class Beat implements Spek
     $this->transmisi = "automatic";
   } 
   
-  public static function setTransmisi(string $transmisi){
+  public function setTransmisi(string $transmisi){
     $this->transmisi = $transmisi;
   }
-  public static function setCc(string $cc){
+  public  function setCc(string $cc){
     $this->cc = $cc;
   }
-  public static function setThn(string $thn){
+  public  function setThn(string $thn){
     $this->tahun = $thn;
   }
-  public static function getSpek(){
+  public  function getSpek(){
     return $this->cc;
     return $this->transmisi;
     return $this->thn;
   }
 }
+
+$a = new Beat();
+$a->setCc(110); $a->setThn(2010);
+
+echo $a->getSpek();
+
