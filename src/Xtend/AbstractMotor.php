@@ -2,19 +2,27 @@
 
 namespace Xtend;
 
-abstract class AbstractMotor
+interface Spek
 {
-  abstract protected function getTransmisi();
-  abstract protected function getCc();
-  abstract protected function getThn();
-  abstract protected function getWarna();
+  abstract public function setTransmisi($transmisi);
+  abstract public function setCc($cc);
+  abstract public function setThn($thn);
+}
+
+abstract class AbstractMotor implements Spek
+{
   
-  public function cetak(){
-    print $this->getTransmisi() . "\n";
-    print $this->getCc() . "\n";
-    print $this->getThn() . "\n";
-    print $this->getWarna() . "\n";
-  }
+  abstract protected function setTransmisi($transmisi);
+  abstract protected function setCc($cc);
+  abstract protected function setThn($thn);
+
+  
+//   public function cetak(){
+//     print $this->getTransmisi() . "\n";
+//     print $this->getCc() . "\n";
+//     print $this->getThn() . "\n";
+//     print $this->getWarna() . "\n";
+//   }
 }
 
 
