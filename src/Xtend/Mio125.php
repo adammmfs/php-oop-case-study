@@ -2,18 +2,51 @@
 
 namespace Xtend;
 
-class Mio125 extends AbstractMotor
+
+class Mio125 extends AbstractMotor implements Spek
 {
-  public static function getTransmisi(){
-    return "matic";
+ 
+  
+  public function __construct(){
+    $this->transmisi = "automatic";
+  } 
+  
+  public function setTransmisi(string $transmisi){
+    $this->transmisi = $transmisi;
   }
-  public static function getCc(){
-    return "125";
+  public  function setCc(string $cc){
+    $this->cc = $cc;
   }
-  public static function getThn(){
-    return "2017";
+  public  function setThn(string $thn){
+    $this->tahun = $thn;
   }
-  public static function getWarna(){
-    return "merah";
+  public  function getCc(){
+    return $this->cc;
+  }
+  public  function getTransmisi(){
+    return $this->transmisi;
+  }
+  public  function getThn(){
+    return $this->thn;
   }
 }
+
+
+
+
+
+// class Mio125 extends AbstractMotor
+// {
+//   public static function getTransmisi(){
+//     return "matic";
+//   }
+//   public static function getCc(){
+//     return "125";
+//   }
+//   public static function getThn(){
+//     return "2017";
+//   }
+//   public static function getWarna(){
+//     return "merah";
+//   }
+// }
