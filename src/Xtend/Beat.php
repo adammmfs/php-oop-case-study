@@ -5,6 +5,7 @@ namespace Xtend;
 class Beat extends AbstractMotor implements Spek
 {
  
+  
   public function __construct(){
     $this->transmisi = "automatic";
   } 
