@@ -2,7 +2,7 @@
 namespace Xtend;
 
 
-abstract class AbstractMotor implements Spek
+abstract class AbstractMotor
 {
   
   abstract function setTransmisi($transmisi);
