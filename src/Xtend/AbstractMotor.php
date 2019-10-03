@@ -4,7 +4,9 @@ namespace Xtend;
 
 abstract class AbstractMotor
 {
-  
+  protected $cc;
+  protected $thn;
+  protected $transmisi;
   abstract function setTransmisi($transmisi);
   abstract function setCc($cc);
   abstract function setThn($thn);
