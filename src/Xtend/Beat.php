@@ -2,12 +2,9 @@
 
 namespace Xtend;
 
-class Beat implements Spek
+class Beat extends AbstractMotor implements Spek
 {
-  private $cc;
-  private $transmisi;
-  private $thn;
-  
+ 
   public function __construct(){
     $this->transmisi = "automatic";
   } 
