@@ -21,9 +21,13 @@ class Beat implements Spek
   public  function setThn(string $thn){
     $this->tahun = $thn;
   }
-  public  function getSpek(){
+  public  function getCc(){
     return $this->cc;
+  }
+  public  function getTransmisi(){
     return $this->transmisi;
+  }
+  public  function getThn(){
     return $this->thn;
   }
 }
@@ -31,5 +35,5 @@ class Beat implements Spek
 $a = new Beat();
 $a->setCc(110); $a->setThn(2010);
 
-echo $a->getSpek();
+echo $a->getCc();
 
